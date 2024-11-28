@@ -8,6 +8,7 @@ import { getAuth } from "firebase/auth";
 const firebaseConfig = {
     apiKey: "AIzaSyBxuNcB1vpuHT7z9wMnxFuZSKHFdLhRFSo",
     authDomain: "auth-firebase-c8c80.firebaseapp.com",
+    databaseURL: "https://auth-firebase-c8c80-default-rtdb.firebaseio.com",
     projectId: "auth-firebase-c8c80",
     storageBucket: "auth-firebase-c8c80.firebasestorage.app",
     messagingSenderId: "207064818866",
@@ -15,5 +16,5 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
